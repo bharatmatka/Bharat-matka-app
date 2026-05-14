@@ -43,26 +43,22 @@
             }
         }
 
-        .logo-container {
-            width: 100%;
-            max-width: 350px;
-            height: auto;
-            margin: 0 auto 30px;
-            padding: 15px;
-            background: linear-gradient(135deg, #FFA500 0%, #228B22 100%);
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .logo-link {
+            display: inline-block;
+            margin-bottom: 30px;
             animation: fadeIn 1s ease-in-out;
         }
 
-        .logo-text {
-            font-size: 36px;
-            font-weight: bold;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            letter-spacing: 2px;
+        .logo-link img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .logo-link img:hover {
+            transform: scale(1.05);
         }
 
         @keyframes fadeIn {
@@ -186,21 +182,17 @@
                 font-size: 16px;
             }
 
-            .logo-container {
+            .logo-link img {
                 max-width: 280px;
-            }
-
-            .logo-text {
-                font-size: 28px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo-container">
-            <div class="logo-text">🎰 Bharat Matka 🎰</div>
-        </div>
+        <a href="https://ibb.co/PZNy7fcY" class="logo-link" target="_blank">
+            <img src="https://i.ibb.co/C5zykTbt/Screenshot-20260514-232902-2.png" alt="Bharat Matka Logo" border="0">
+        </a>
         
         <h1>Bharat Matka App</h1>
         
