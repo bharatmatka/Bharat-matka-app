@@ -18,6 +18,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px;
         }
 
         .container {
@@ -26,7 +27,7 @@
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
             padding: 50px;
             max-width: 600px;
-            width: 90%;
+            width: 100%;
             text-align: center;
             animation: slideUp 0.8s ease-in-out;
         }
@@ -42,9 +43,22 @@
             }
         }
 
-        .logo {
-            font-size: 60px;
-            margin-bottom: 20px;
+        .logo-image {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         h1 {
@@ -121,19 +135,6 @@
             font-size: 14px;
         }
 
-        .app-icon {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 20px;
-            margin: 0 auto 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 50px;
-            color: white;
-        }
-
         @media (max-width: 600px) {
             .container {
                 padding: 30px;
@@ -152,17 +153,15 @@
                 font-size: 16px;
             }
 
-            .app-icon {
-                width: 80px;
-                height: 80px;
-                font-size: 40px;
+            .logo-image {
+                max-width: 280px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="app-icon">📱</div>
+        <img src="https://raw.githubusercontent.com/bharatmatka/Bharat-matka-app/main/logo.png" alt="Bharat Matka Logo" class="logo-image">
         
         <h1>Bharat Matka App</h1>
         
