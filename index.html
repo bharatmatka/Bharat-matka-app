@@ -43,13 +43,26 @@
             }
         }
 
-        .logo-image {
+        .logo-container {
             width: 100%;
             max-width: 350px;
             height: auto;
-            margin-bottom: 30px;
-            border-radius: 10px;
+            margin: 0 auto 30px;
+            padding: 15px;
+            background: linear-gradient(135deg, #FFA500 0%, #228B22 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             animation: fadeIn 1s ease-in-out;
+        }
+
+        .logo-text {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
         }
 
         @keyframes fadeIn {
@@ -173,15 +186,21 @@
                 font-size: 16px;
             }
 
-            .logo-image {
+            .logo-container {
                 max-width: 280px;
+            }
+
+            .logo-text {
+                font-size: 28px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://raw.githubusercontent.com/bharatmatka/Bharat-matka-app/main/logo.png" alt="Bharat Matka Logo" class="logo-image">
+        <div class="logo-container">
+            <div class="logo-text">🎰 Bharat Matka 🎰</div>
+        </div>
         
         <h1>Bharat Matka App</h1>
         
